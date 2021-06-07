@@ -47,10 +47,10 @@ pod install
 Finally, open the project using:
 
 ```
-open pock-note.xcworkspace
+open Note.xcworkspace
 ```
 
-> Opening the project using the `pock-note.xcodeproj` will fail to compile! You must open `pock-note.xcworkspace`.
+> Opening the project using the `Note.xcodeproj` will fail to compile! You must open `Note.xcworkspace`.
 
 ### Testing
 Drag and drop your compiled `Note.pock` into Pock's widget installer. Pock will ask to reload via touchbar. 
