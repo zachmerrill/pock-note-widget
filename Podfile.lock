@@ -1,0 +1,31 @@
+PODS:
+  - Defaults (4.2.2)
+  - PockKit (0.2.0):
+    - PockKit/3rd (= 0.2.0)
+    - PockKit/Sources (= 0.2.0)
+    - SnapKit
+  - PockKit/3rd (0.2.0):
+    - SnapKit
+  - PockKit/Sources (0.2.0):
+    - PockKit/3rd
+    - SnapKit
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - Defaults
+  - PockKit
+
+SPEC REPOS:
+  trunk:
+    - Defaults
+    - PockKit
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Defaults: d785e56c0fb8890dc40351603f05c8e1df1bdd45
+  PockKit: 2b1a956aa22fb442d701c3be73790011ab08a785
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: ebf38d887123ce8ee5663ddb58e4f762963f6a50
+
+COCOAPODS: 1.10.1

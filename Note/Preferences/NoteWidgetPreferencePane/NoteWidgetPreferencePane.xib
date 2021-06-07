@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NoteWidgetPreferencePane" customModule="Note" customModuleProvider="target">
+            <connections>
+                <outlet property="noteTextField" destination="M1E-2g-TQZ" id="4R3-mp-G5R"/>
+                <outlet property="view" destination="fCd-Cw-Dfe" id="TPO-Jt-GRJ"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="fCd-Cw-Dfe">
+            <rect key="frame" x="0.0" y="0.0" width="485" height="254"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2zP-I8-nii">
+                    <rect key="frame" x="20" y="20" width="445" height="214"/>
+                    <subviews>
+                        <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o0Y-Jv-uXc">
+                            <rect key="frame" x="0.0" y="0.0" width="445" height="214"/>
+                            <subviews>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WDF-be-lcu">
+                                    <rect key="frame" x="-2" y="196" width="34" height="16"/>
+                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Text:" id="PoK-B9-Kcp">
+                                        <font key="font" usesAppearanceFont="YES"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="M1E-2g-TQZ">
+                                    <rect key="frame" x="38" y="193" width="407" height="21"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Your note here." drawsBackground="YES" id="XP9-kI-I5y">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="WDF-be-lcu" firstAttribute="top" secondItem="o0Y-Jv-uXc" secondAttribute="top" constant="2" id="U4b-O9-6zf"/>
+                            </constraints>
+                            <visibilityPriorities>
+                                <integer value="1000"/>
+                                <integer value="1000"/>
+                            </visibilityPriorities>
+                            <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
+                                <real value="3.4028234663852886e+38"/>
+                            </customSpacing>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="o0Y-Jv-uXc" secondAttribute="trailing" id="75h-dP-O1B"/>
+                        <constraint firstItem="o0Y-Jv-uXc" firstAttribute="leading" secondItem="2zP-I8-nii" secondAttribute="leading" id="Mdo-Vg-bYy"/>
+                    </constraints>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="2zP-I8-nii" firstAttribute="leading" secondItem="fCd-Cw-Dfe" secondAttribute="leading" constant="20" id="GFI-l3-SoW"/>
+                <constraint firstItem="2zP-I8-nii" firstAttribute="top" secondItem="fCd-Cw-Dfe" secondAttribute="top" constant="20" id="NlE-ja-Kod"/>
+                <constraint firstAttribute="bottom" secondItem="2zP-I8-nii" secondAttribute="bottom" constant="20" id="yNR-FX-kU8"/>
+                <constraint firstAttribute="trailing" secondItem="2zP-I8-nii" secondAttribute="trailing" constant="20" id="ySp-hv-Ol1"/>
+            </constraints>
+            <point key="canvasLocation" x="-53" y="65"/>
+        </customView>
+    </objects>
+</document>

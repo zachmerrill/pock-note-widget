@@ -6,9 +6,24 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		92DA8F52266D871C00C5C9F4 /* NoteWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA8F51266D871C00C5C9F4 /* NoteWidget.swift */; };
+		92DA8F55266D89D400C5C9F4 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA8F54266D89D400C5C9F4 /* Preferences.swift */; };
+		92DA8F5A266D8B2500C5C9F4 /* NoteWidgetPreferencePane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92DA8F59266D8B2500C5C9F4 /* NoteWidgetPreferencePane.xib */; };
+		92DA8F5C266D8C6700C5C9F4 /* NoteWidgetPreferencePane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA8F5B266D8C6700C5C9F4 /* NoteWidgetPreferencePane.swift */; };
+		A758303C2D0287F86FFE942F /* Pods_Note.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965684F3FBA29BCC2C0292E5 /* Pods_Note.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		2589EDFA1D8DC2F394B291C0 /* Pods-Note.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Note.release.xcconfig"; path = "Target Support Files/Pods-Note/Pods-Note.release.xcconfig"; sourceTree = "<group>"; };
+		3BD2DEFECBA0E0242CEA3A27 /* Pods-Note.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Note.debug.xcconfig"; path = "Target Support Files/Pods-Note/Pods-Note.debug.xcconfig"; sourceTree = "<group>"; };
 		927BA858266D83F5006301BC /* Note.pock */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Note.pock; sourceTree = BUILT_PRODUCTS_DIR; };
 		927BA85B266D83F5006301BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92DA8F51266D871C00C5C9F4 /* NoteWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteWidget.swift; sourceTree = "<group>"; };
+		92DA8F54266D89D400C5C9F4 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		92DA8F59266D8B2500C5C9F4 /* NoteWidgetPreferencePane.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteWidgetPreferencePane.xib; sourceTree = "<group>"; };
+		92DA8F5B266D8C6700C5C9F4 /* NoteWidgetPreferencePane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteWidgetPreferencePane.swift; sourceTree = "<group>"; };
+		965684F3FBA29BCC2C0292E5 /* Pods_Note.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Note.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -16,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A758303C2D0287F86FFE942F /* Pods_Note.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -27,6 +43,8 @@
 			children = (
 				927BA85A266D83F5006301BC /* Note */,
 				927BA859266D83F5006301BC /* Products */,
+				DC039C14EC4436A2FAA15972 /* Pods */,
+				D16D2243864264815D42176F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -42,8 +60,45 @@
 			isa = PBXGroup;
 			children = (
 				927BA85B266D83F5006301BC /* Info.plist */,
+				92DA8F51266D871C00C5C9F4 /* NoteWidget.swift */,
+				92DA8F53266D89C700C5C9F4 /* Preferences */,
 			);
 			path = Note;
+			sourceTree = "<group>";
+		};
+		92DA8F53266D89C700C5C9F4 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				92DA8F56266D8A2000C5C9F4 /* NoteWidgetPreferencePane */,
+				92DA8F54266D89D400C5C9F4 /* Preferences.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		92DA8F56266D8A2000C5C9F4 /* NoteWidgetPreferencePane */ = {
+			isa = PBXGroup;
+			children = (
+				92DA8F59266D8B2500C5C9F4 /* NoteWidgetPreferencePane.xib */,
+				92DA8F5B266D8C6700C5C9F4 /* NoteWidgetPreferencePane.swift */,
+			);
+			path = NoteWidgetPreferencePane;
+			sourceTree = "<group>";
+		};
+		D16D2243864264815D42176F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				965684F3FBA29BCC2C0292E5 /* Pods_Note.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC039C14EC4436A2FAA15972 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BD2DEFECBA0E0242CEA3A27 /* Pods-Note.debug.xcconfig */,
+				2589EDFA1D8DC2F394B291C0 /* Pods-Note.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -53,6 +108,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 927BA85E266D83F5006301BC /* Build configuration list for PBXNativeTarget "Note" */;
 			buildPhases = (
+				C210CD58FDB141FB9DFF1194 /* [CP] Check Pods Manifest.lock */,
 				927BA854266D83F5006301BC /* Sources */,
 				927BA855266D83F5006301BC /* Frameworks */,
 				927BA856266D83F5006301BC /* Resources */,
@@ -76,6 +132,7 @@
 				TargetAttributes = {
 					927BA857266D83F5006301BC = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -102,16 +159,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92DA8F5A266D8B2500C5C9F4 /* NoteWidgetPreferencePane.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C210CD58FDB141FB9DFF1194 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Note-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		927BA854266D83F5006301BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92DA8F55266D89D400C5C9F4 /* Preferences.swift in Sources */,
+				92DA8F5C266D8C6700C5C9F4 /* NoteWidgetPreferencePane.swift in Sources */,
+				92DA8F52266D871C00C5C9F4 /* NoteWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,30 +317,49 @@
 		};
 		927BA85F266D83F5006301BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BD2DEFECBA0E0242CEA3A27 /* Pods-Note.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = B66X6JRT6J;
 				INFOPLIST_FILE = Note/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.zachmerrill.Note;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = pock;
 			};
 			name = Debug;
 		};
 		927BA860266D83F5006301BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2589EDFA1D8DC2F394B291C0 /* Pods-Note.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = B66X6JRT6J;
 				INFOPLIST_FILE = Note/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.zachmerrill.Note;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = pock;
 			};
 			name = Release;
