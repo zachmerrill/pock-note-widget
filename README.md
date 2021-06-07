@@ -20,9 +20,17 @@ If you're like me, the reminders app is too many clicks away and easy to still f
 Using Note, you can type up a short message which will be displayed on your touchbar right above your keyboard. No more forgetting!
 
 ## Installing
-TBD. For now, use Getting Started below.
+Download the latest version from [Releases](https://github.com/zachmerrill/pock-note-widget/releases).
 
-## Getting Started
+Install using Pock's drag and drop widget installer:
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=320px height=285px src=".github/images/install.gif" alt="PockKit logo"></a>
+</p>
+
+Reload Pock from the touchbar and Note will be available.
+
+## Getting Started with XCode
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
