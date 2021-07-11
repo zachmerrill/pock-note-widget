@@ -73,4 +73,4 @@ Your Note widget should now be installed and/or updated.
 
 ## Authors
 
-- [@zachmerrill](https://github.com/zachmerrill)
+- [Zach Merrill](https://github.com/zachmerrill)
